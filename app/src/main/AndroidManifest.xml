@@ -38,7 +38,7 @@
                 android:value="SuperWebCamera" />
             <meta-data
                 android:name="usb_device"
-                android:value="VID_1659PID_8963" />
+                android:value="VID_1133PID_2085" />
             <meta-data
                 android:name="device_categories"
                 android:value="CAAAAMERA" />
