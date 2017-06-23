@@ -29,6 +29,7 @@
             android:label="@string/service_name">
             <intent-filter>
                 <action android:name="ru.evotor.devices.drivers.DriverManager"/>
+                <action android:name="ru.evotor.devices.drivers.ScalesService" />
             </intent-filter>
             <meta-data
                 android:name="vendor_name"
@@ -41,7 +42,7 @@
                 android:value="VID_1133PID_2085" />
             <meta-data
                 android:name="device_categories"
-                android:value="CAAAAMERA" />
+                android:value="SCALES|PRICEPRINTER|CASHDRAWER" />
 
         </service>
     </application>

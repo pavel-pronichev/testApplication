@@ -28,6 +28,8 @@ public class UvcCameraDeviceService extends Service {
         switch (action){
             case Constants.INTENT_FILTER_DRIVER_MANAGER:
                 return new UvcCameraDriverManagerStub(UvcCameraDeviceService.this);
+            case Constants.INTENT_FILTER_SCALES:
+                return new UvcCameraStub();
             default:
                 return null;
         }
