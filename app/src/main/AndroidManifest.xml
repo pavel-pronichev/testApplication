@@ -21,6 +21,29 @@
                 <category android:name="android.intent.category.EVOTOR" />
             </intent-filter>
         </activity>
+
+        <service android:name=".UvcCameraDeviceService"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/camera"
+            android:label="@string/service_name">
+            <intent-filter>
+                <action android:name="ru.evotor.devices.drivers.DriverManager"/>
+            </intent-filter>
+            <meta-data
+                android:name="vendor_name"
+                android:value="Camera" />
+            <meta-data
+                android:name="model_name"
+                android:value="SuperWebCamera" />
+            <meta-data
+                android:name="usb_device"
+                android:value="VID_1659PID_8963" />
+            <meta-data
+                android:name="device_categories"
+                android:value="CAAAAMERA" />
+
+        </service>
     </application>
     
     <uses-permission android:name="android.permission.INTERNET"/>
